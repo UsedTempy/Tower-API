@@ -4,7 +4,9 @@ const app = express()
 const port = 3069
 
 app.get('/towerHeight', (req, res) => {
-    return 5
+    return res.json({
+        height: 5,
+    })
 })
 
 app.listen(port, async () => {
